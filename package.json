@@ -1,6 +1,6 @@
 {
   "name": "daon-verification",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "DAON verification package",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
