@@ -33,7 +33,13 @@ export default {
     {
       name: 'copy-dts',
       buildEnd() {
-        fs.cpSync('src/index.ts', 'dist/index.d.ts', { force: true });
+        const dtsPath = 'dist/index.d.ts';
+        if (fs.existsSync(dtsPath)) {
+          let content = fs.readFileSync(dtsPath, 'utf-8');
+          // Adjust paths by replacing './' with './src/' if needed
+          content = content.replace(/from "\.\//g, 'from "./src/');
+          fs.writeFileSync(dtsPath, content);
+        }
       }
     }
   ]
