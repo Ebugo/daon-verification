@@ -1,4 +1,4 @@
-import { responseMessageHandler } from "../src";
+import { responseMessageHandler } from "../src/utils";
 
 // jest.mock("../../helpers/toastNotify", () => ({
 //   ToastNotify: jest.fn(),

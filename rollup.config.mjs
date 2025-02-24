@@ -3,6 +3,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import json from '@rollup/plugin-json';
 import polyfillNode from 'rollup-plugin-polyfill-node';
+import fs from 'fs';
 
 export default {
   input: 'src/index.ts',
@@ -28,6 +29,12 @@ export default {
     commonjs(),
     json(),
     polyfillNode(),
-    typescript()
+    typescript(),
+    {
+      name: 'copy-dts',
+      buildEnd() {
+        fs.cpSync('src/index.ts', 'dist/index.d.ts', { force: true });
+      }
+    }
   ]
 };
