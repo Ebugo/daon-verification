@@ -37,3 +37,4 @@ declare const handleProceed: ({ verification, correlationId, nin, useBVN, }: {
     useBVN: boolean;
 }) => Promise<IHandleProceed>;
 export { loading as onboardingLoading, base64Url, dimecId, correlationId, existingUser, errorMessage as onboardingErrorMessage, startSelfieRegistration, dimecExisting, dimecStep, evaluateSelfie, handleProceed, };
+//# sourceMappingURL=onboarding.d.ts.map

@@ -11,3 +11,4 @@ declare const clearDimecError: () => null;
 declare const clearData: () => void;
 declare const clearErrors: () => void;
 export { selfieEvaluationData, selfieRegistrationData, loading, errorMessage, dimecError, dimecData, dimecWebRegistration, selfieEvaluate, selfieRegistration, clearDimecError, clearData, clearErrors, };
+//# sourceMappingURL=dimec.d.ts.map

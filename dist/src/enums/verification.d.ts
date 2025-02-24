@@ -16,3 +16,4 @@ export declare enum CHANNEL {
     Mobile = 2,
     Web = 1
 }
+//# sourceMappingURL=verification.d.ts.map

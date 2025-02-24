@@ -18,7 +18,7 @@ export default {
     {
       file: 'dist/index.umd.js',
       format: 'umd',
-      name: 'MyPackage', // Global variable for browser usage
+      name: 'MyPackage',
     }
   ],
   plugins: [

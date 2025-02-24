@@ -10,3 +10,4 @@ interface IHandleProceed extends IResponse {
     shouldSkip?: boolean;
 }
 export { type IResponse, type IHandleProceed };
+//# sourceMappingURL=onboarding.d.ts.map
